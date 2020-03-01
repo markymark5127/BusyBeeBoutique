@@ -1,0 +1,72 @@
+<div class="inputs">
+  <mat-form-field class="data">
+    <mat-label>Cup Size</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let size of sizes" [value]="size.value">
+        {{size.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="data">
+    <mat-label>Cup Color</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let color of colors" [value]="color.value">
+        {{color.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="data">
+    <mat-label>Text Color</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let color of colors" [value]="color.value">
+        {{color.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="data">
+    <mat-label>Text Position</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let pos of positions" [value]="pos.value">
+        {{pos.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="data">
+    <mat-label>Fonts</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let font of fonts" [value]="font.value">
+        {{font.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="data">
+    <mat-label>Font Size</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let fs of fontSizes" [value]="fs.value">
+        {{fs.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div>
+  <mat-form-field class="example-full-width">
+  <mat-label>Text</mat-label>
+  <input matInput placeholder="Ex. Pizza" >
+</mat-form-field>
+</div>
+
+<div style="margin-left: 32vw; padding: 3vh;">
+  <div class="square" ></div>
+</div>
+
+
+<div>
+  <button mat-flat-button color="primary" background="primary">Add To Cart</button>
+</div>
+

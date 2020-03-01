@@ -1,0 +1,13 @@
+.example-card {
+  max-width: 400px;
+  color: #424242;
+  background-color: white;
+}
+
+.mat-card-subtitle {
+  color: #c2185b
+}
+
+.example-header-image {
+  background-size: cover;
+}

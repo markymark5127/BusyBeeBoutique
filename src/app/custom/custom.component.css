@@ -1,0 +1,22 @@
+.data {
+  text-align: center;
+  padding-left: 1vw; padding-right: 1vw;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 80%;
+  color: white;
+}
+
+.square {
+  height: 33vw;
+  width: 33vw;
+  background-color: #555;
+  text-align: center;
+}
