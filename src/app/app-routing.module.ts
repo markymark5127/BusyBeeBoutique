@@ -13,8 +13,9 @@ const routes: Routes = [
   {path: 'cart', component: OrderComponent},
   {path: 'designs', component: DesignsComponent},
   {path: 'custom', component: CustomComponent},
-  {path: '**', component: PageNotFoundComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '**', component: PageNotFoundComponent},
+
 ];
 
 @NgModule({
