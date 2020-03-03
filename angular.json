@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "BusyBeeBoutique"
+  "defaultProject": "BusyBeeBoutique",
+  "cli": {
+    "analytics": false
+  }
 }

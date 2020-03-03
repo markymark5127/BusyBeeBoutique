@@ -4,12 +4,10 @@
     <span class="example-spacer"></span>
     <button mat-button routerLink="/home">Home</button>
     <button mat-button routerLink="/designs">Designs</button>
-    <button mat-button routerLink="/custom">Custom</button>
+    <!-- <button mat-button routerLink="/custom">Custom</button> -->
     <button mat-icon-button routerLink="/cart" color="secondary" aria-label="Icon-button with a cart icon">
-      <mat-icon svgIcon="cart" aria-hidden="false" aria-label="Shopping cart up SVG icon" matBadge="0" matBadgeColor="warn" matBadgeOverlap="true"></mat-icon>
+      <mat-icon svgIcon="cart" aria-hidden="false" aria-label="Shopping cart up SVG icon" matBadge="{{this.cartService.getLength()}}" matBadgeColor="warn" matBadgeOverlap="true" matBadgeHidden="{{this.badgeHidden(this.cartService.getLength())}}"></mat-icon>
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
-<div class="mainArea">
   <router-outlet></router-outlet>
-</div>

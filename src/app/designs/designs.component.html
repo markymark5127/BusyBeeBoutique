@@ -4,14 +4,22 @@
       <mat-card-title>{{cup.name}}</mat-card-title>
       <mat-card-subtitle >${{cup.price}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src={{cup.img}} alt="Photo of a Shiba Inu">
+    <img mat-card-image src={{cup.img}} alt="Photo of a Product">
     <mat-card-content>
       <p>
         {{cup.desc}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-flat-button color="primary">Add To Cart</button>
+      <button mat-flat-button color="primary" (click)="this.cartService.addToCart(cup)">Add To Cart</button>
+      <mat-form-field style="padding-left: 2%;">
+        <mat-label>Cup Size</mat-label>
+        <mat-select [(ngModel)]=cup.size>
+          <mat-option *ngFor="let size of this.cartService.sizes" [value]="size.value">
+            {{size.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </mat-card-actions>
   </mat-card>
 </div>
