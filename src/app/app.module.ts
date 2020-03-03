@@ -15,6 +15,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { DesignsComponent } from './designs/designs.component';
 import { OrderComponent } from './order/order.component';
@@ -44,9 +48,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatRadioModule,
     MatDialogModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    MatTableModule,
+    MatTabsModule,
+    MatGridListModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, []]
 })
 export class AppModule { }

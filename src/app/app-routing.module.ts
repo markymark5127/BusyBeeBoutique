@@ -9,12 +9,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 
 const routes: Routes = [
-  {path:'home', component: HomeComponent},
-  {path:'cart', component: OrderComponent},
-  {path:'designs', component: DesignsComponent},
-  {path:'custom', component: CustomComponent},
-  {path:'**', component: PageNotFoundComponent},
-  {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'cart', component: OrderComponent},
+  {path: 'designs', component: DesignsComponent},
+  {path: 'custom', component: CustomComponent},
+  {path: '**', component: PageNotFoundComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
