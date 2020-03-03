@@ -5,3 +5,9 @@
 .example-header-image {
   background-size: cover;
 }
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

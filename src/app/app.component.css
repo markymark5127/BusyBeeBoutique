@@ -6,3 +6,9 @@
   flex: 1 1 auto;
 }
 
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
