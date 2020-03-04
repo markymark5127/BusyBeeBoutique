@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { HttpClientModule } from '@angular/common/http';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatRadioModule } from '@angular/material/radio';
@@ -22,6 +21,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HttpClientModule } from '@angular/common/http'
 
 import { DesignsComponent } from './designs/designs.component';
 import { OrderComponent } from './order/order.component';
@@ -46,7 +46,6 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule,
     MatBadgeModule,
     MatToolbarModule,
     MatSelectModule,
@@ -60,7 +59,8 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatSidenavModule,
     MatSliderModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent, []]

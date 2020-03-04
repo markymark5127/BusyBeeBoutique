@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  name: string;
+  email: string;
+  message: string;
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+  onSubmit(event) {
+    let data = {
+      name: this.name,
+      email: this.email,
+      message: this.message
+    }
+    this.http.post('https://formspree.io/xqkbwypj', JSON.stringify(data))
+      .subscribe();
   }
 
 }
