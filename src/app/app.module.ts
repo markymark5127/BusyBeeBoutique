@@ -19,12 +19,16 @@ import { FormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { DesignsComponent } from './designs/designs.component';
 import { OrderComponent } from './order/order.component';
 import { CustomComponent } from './custom/custom.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     OrderComponent,
     CustomComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +57,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FormsModule,
     MatTableModule,
     MatTabsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent, []]

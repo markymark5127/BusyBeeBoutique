@@ -1,0 +1,39 @@
+<!-- <form action="https://formspree.io/xqkbwypj" method="POST" class="example-form">
+  <p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email:</mat-label>
+      <input matInput placeholder="Ex. Johnny.Appleseed@email.com" >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Text:</mat-label>
+      <input matInput placeholder="You are an amazing company" >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Text:</mat-label>
+      <input type="submit" mat-button value="Send">
+    </mat-form-field>
+  </p>
+</form> -->
+
+
+<form class="example-form" action="https://formspree.io/xqkbwypj" method="POST" id="emailForm">
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Text</mat-label>
+      <textarea matInput placeholder="You are an amazing company"></textarea>
+    </mat-form-field>
+  </p>
+</form>
+<button mat-raised-button type="submit" form="emailForm">Submit</button>

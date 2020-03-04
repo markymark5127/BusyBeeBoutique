@@ -56,7 +56,7 @@ export class CustomComponent implements OnInit {
     {value: 'timesnewroman', viewValue: 'Times New Roman'},
     {value: 'verdana', viewValue: 'Verdana'}
   ];
-  
+
   fontSizes: Sizes[] = [
     {value: 8, viewValue: '8 pt.'},
     {value: 10, viewValue: '10 pt.'},
@@ -65,10 +65,10 @@ export class CustomComponent implements OnInit {
     {value: 24, viewValue: '24 pt.'},
   ];
 
-  noneOption: Boolean;
-  textOption: Boolean;
-  imgOption: Boolean;
-  text: String;
+  noneOption: boolean;
+  textOption: boolean;
+  imgOption: boolean;
+  text: string;
   img: ImageBitmap;
 
   constructor() { }

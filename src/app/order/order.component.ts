@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product, CartService } from '../cart.service';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-order',
@@ -8,10 +9,9 @@ import { Product, CartService } from '../cart.service';
 })
 export class OrderComponent implements OnInit {
   displayedColumns: string[] = ['Name', 'Size', 'Price', 'Remove'];
+  dataSource = new MatTableDataSource(this.cartService.items);
   constructor(public cartService: CartService) {
-    console.log(cartService.items[0].name);
   }
-
   ngOnInit(): void {
   }
 
@@ -23,6 +23,9 @@ export class OrderComponent implements OnInit {
     const index: number = this.cartService.items.indexOf(item);
     if (index !== -1) {
       this.cartService.items.splice(index, 1);
+      //console.log("datasource after cartservice: ", this.dataSource);
+      //this.datasource.splice(index, 1);
+      this.dataSource._updateChangeSubscription();
     }
   }
 
