@@ -1,10 +1,10 @@
 <div class="space">
-  <mat-grid-list cols="4" gutterSize="1%">
+  <mat-grid-list cols="4" gutterSize="1%" style="flex: 1 0 auto;">
     <mat-grid-tile
         *ngFor="let tile of tiles"
         [colspan]="tile.cols"
         [rowspan]="tile.rows">
-        <img src="{{tile.text}}" class="imging logo" alt="image caption"/>
+        <img src="{{tile.text}}" class="tile-image" alt="image caption" layout-fill/>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

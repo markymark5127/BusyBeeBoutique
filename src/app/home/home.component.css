@@ -3,3 +3,7 @@
   padding: 1%;
   background-color: white;
  }
+ .tile-image {
+  width:100%;
+  height: auto;
+}
