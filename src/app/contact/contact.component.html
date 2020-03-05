@@ -1,22 +1,22 @@
-<form (ngSubmit)="onSubmit($event)" class="example-form" action="https://formspree.io/xqkbwypj" method="POST" id="emailForm">
+<form [formGroup]="emailForm" (ngSubmit)="onSubmit($event)" class="example-form" action="https://formspree.io/xqkbwypj" method="POST" id="emailForm">
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
       <mat-label>Name</mat-label>
-      <input type="text" name="name" matInput [(ngModel)]="name">
+      <input formControlName="name" type="text" name="name" matInput>
     </mat-form-field></td>
   </tr></table>
 
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
-      <input type="email" name="_replyto" matInput [(ngModel)]="email">
+      <input formControlName="email" type="email" name="_replyto" matInput>
     </mat-form-field></td>
   </tr></table>
   <p>
     <mat-form-field class="example-full-width">
       <mat-label>Text</mat-label>
-      <textarea matInput name="message" placeholder="You are an amazing company" [(ngModel)]="message"></textarea>
+      <textarea formControlName="message" matInput name="message" placeholder="You are an amazing company"></textarea>
     </mat-form-field>
   </p>
-  <button type="submit" mat-raised-button >Submit</button>
+  <button type="submit" [disabled]="!emailForm.valid" mat-raised-button >Submit</button>
 </form>

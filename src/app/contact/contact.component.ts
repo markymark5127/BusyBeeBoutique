@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,22 +9,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit {
 
-  name: string;
-  email: string;
-  message: string;
+  emailForm = new FormGroup({
+    name: new FormControl(''),
+    email: new FormControl(''),
+    message: new FormControl(''),
+    subject: new FormControl(''),
+  });
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
   onSubmit(event) {
-    var data = {
-      name: this.name,
-      email: this.email,
-      message: this.message
-    };
-    this.http.post('https://formspree.io/xqkbwypj', JSON.stringify(data))
-      .subscribe();
+    // this.http.post('https://formspree.io/xqkbwypj', JSON.stringify(this.emailForm))
+    //   .subscribe(response => {}, err => { alert('There was an error sending your message. Please try again.'); });
+    // this.emailForm.
+    this.emailForm.reset();
   }
 
 }

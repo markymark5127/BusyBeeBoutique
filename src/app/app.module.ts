@@ -21,7 +21,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { DesignsComponent } from './designs/designs.component';
 import { OrderComponent } from './order/order.component';
@@ -60,7 +61,8 @@ import { ContactComponent } from './contact/contact.component';
     MatSidenavModule,
     MatSliderModule,
     MatSlideToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, []]
