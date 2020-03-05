@@ -1,19 +1,22 @@
-<script src="./angular-formspree.js"></script>
-<form class="example-form" action="https://formspree.io/xqkbwypj" method="POST" id="emailForm">
+<form (ngSubmit)="onSubmit($event)" class="example-form" action="https://formspree.io/xqkbwypj" method="POST" id="emailForm">
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input type="text" name="name" matInput [(ngModel)]="name">
+    </mat-form-field></td>
+  </tr></table>
 
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
-      <input type="email" name="_replyto" matInput>
+      <input type="email" name="_replyto" matInput [(ngModel)]="email">
     </mat-form-field></td>
   </tr></table>
-
   <p>
     <mat-form-field class="example-full-width">
       <mat-label>Text</mat-label>
-      <textarea matInput name="message" placeholder="You are an amazing company"></textarea>
+      <textarea matInput name="message" placeholder="You are an amazing company" [(ngModel)]="message"></textarea>
     </mat-form-field>
   </p>
-  <button mat-raised-button type="submit">Submit</button>
+  <button type="submit" mat-raised-button >Submit</button>
 </form>
-
