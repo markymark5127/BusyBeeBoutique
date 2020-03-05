@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Confirm Order</h1>
+<form (ngSubmit)="onSubmit()" class="example-form" #myForm="ngForm">
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input type="text" name="name" matInput required [(ngModel)]="data.name">
+    </mat-form-field>
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" name="_replyto" matInput required [(ngModel)]="data.email">
+      </mat-form-field></td>
+    </tr></table>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-flat-button type="submit" color="primary" [mat-dialog-close]="data" [disabled]="!myForm.form.valid">Order</button>
+    <button mat-button color="secondary" (click)="onCancelClick()">Cancel</button>
+  </div>
+</form>

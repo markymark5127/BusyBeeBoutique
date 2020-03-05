@@ -28,8 +28,8 @@
       </button></p>
       <p><button class="nav-button" mat-button routerLink="/home" (click)="close()">Home</button></p>
       <p><button class="nav-button" mat-button routerLink="/designs" (click)="close()">Designs</button></p>
-      <!-- <p><button class="nav-button" mat-button routerLink="/custom">Custom</button></p> -->
-      <p><button class="nav-button"mat-button routerLink="/contact">Contact</button></p>
+      <!-- <p><button class="nav-button" mat-button routerLink="/custom" (click)="close()">Custom</button></p> -->
+      <p><button class="nav-button"mat-button routerLink="/contact" (click)="close()">Contact</button></p>
 
     </mat-sidenav>
 
@@ -37,7 +37,7 @@
     <mat-sidenav-content>
       <mat-toolbar color="primary" class="app-toolbar">
         <mat-toolbar-row>
-          <button mat-button (click)="sidenav.open()">
+          <button mat-icon-button (click)="sidenav.open()">
             <mat-icon svgIcon="menu" aria-hidden="false" aria-label="Menu SVG icon"></mat-icon>
           </button>
           <img routerLink="/home" src="./assets/busybee_trans.png" class="imging logo" alt="image caption"/>

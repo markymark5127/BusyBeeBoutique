@@ -23,4 +23,28 @@ export class DesignsComponent implements OnInit {
     window.alert('Your product has been added to the cart!');
   }
 
+  onSizeChange(product: Product) {
+    var index = this.cups.indexOf(product);
+    switch (this.cups[index].size) {
+      case 10:
+        this.cups[index].price = 35;
+        break;
+      case 20:
+        this.cups[index].price = 40;
+        break;
+      case 30:
+        this.cups[index].price = 45;
+        break;
+      case 36:
+        this.cups[index].price = 50;
+        break;
+      case 46:
+        this.cups[index].price = 55;
+        break;
+      case 64:
+        this.cups[index].price = 60;
+        break;
+    }
+  }
+
 }
