@@ -75,7 +75,7 @@ import { NewsComponent } from './news/news.component';
     MatSliderModule,
     MatSlideToggleModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, []]
