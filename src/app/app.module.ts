@@ -34,6 +34,10 @@ import { CustomComponent } from './custom/custom.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
+import { ClothingComponent } from './clothing/clothing.component';
+import { AccessoriesComponent } from './accessories/accessories.component';
+import { AboutComponent } from './about/about.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { ContactComponent } from './contact/contact.component';
     CustomComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ContactComponent
+    ContactComponent,
+    ClothingComponent,
+    AccessoriesComponent,
+    AboutComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

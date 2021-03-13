@@ -7,7 +7,11 @@
       <span routerLink="/home" class="logo">Busy Bee Boutique</span>
       <span class="example-spacer"></span>
       <button mat-button routerLink="/home">Home</button>
-      <button mat-button routerLink="/designs">Designs</button>
+      <button mat-button routerLink="/news">News</button>
+      <button mat-button routerLink="/cups">Cups</button>
+      <button mat-button routerLink="/clothing">Clothing</button>
+      <button mat-button routerLink="/accessories">Accessories</button>
+      <button mat-button routerLink="/about">About</button>
       <!-- <button mat-button routerLink="/custom">Custom</button> -->
       <button mat-button routerLink="/contact">Contact</button>
       <button mat-icon-button routerLink="/cart" color="secondary" aria-label="Icon-button with a cart icon">
@@ -23,11 +27,15 @@
   <!-- Side Menu -->
   <mat-sidenav-container class="example-container" (backdropClick)="close()">
     <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
-      <p><button  class="nav-button" mat-button (click)="close()">
+      <!--<p><button  class="nav-button" mat-button (click)="close()">
         <mat-icon svgIcon="close" aria-hidden="false" aria-label="Close SVG icon"></mat-icon>
-      </button></p>
+      </button></p>-->
       <p><button class="nav-button" mat-button routerLink="/home" (click)="close()">Home</button></p>
-      <p><button class="nav-button" mat-button routerLink="/designs" (click)="close()">Designs</button></p>
+      <p><button class="nav-button" mat-button routerLink="/news" (click)="close()">News</button></p>
+      <p><button class="nav-button" mat-button routerLink="/cups" (click)="close()">Cups</button></p>
+      <p><button class="nav-button" mat-button routerLink="/clothing" (click)="close()">Clothing</button></p>
+      <p><button class="nav-button" mat-button routerLink="/accessories" (click)="close()">Accessories</button></p>
+      <p><button class="nav-button" mat-button routerLink="/about" (click)="close()">About</button></p>
       <!-- <p><button class="nav-button" mat-button routerLink="/custom" (click)="close()">Custom</button></p> -->
       <p><button class="nav-button"mat-button routerLink="/contact" (click)="close()">Contact</button></p>
 

@@ -1,0 +1,17 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}

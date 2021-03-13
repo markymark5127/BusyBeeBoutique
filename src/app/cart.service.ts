@@ -4,13 +4,18 @@ interface Sizes {
   value: number;
   viewValue: string;
 }
-
+export interface Pricing{
+  size: string;
+  price: number;
+}
 export interface Product {
   name: string;
   price: number;
-  size: number;
+  size: string;
   desc: string;
   img: string;
+  priceOpt: Pricing[];
+
 }
 
 @Injectable({
