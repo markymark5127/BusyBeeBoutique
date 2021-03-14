@@ -26,6 +26,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 // Created Components
 import { DesignsComponent } from './designs/designs.component';
@@ -75,7 +76,8 @@ import { NewsComponent } from './news/news.component';
     MatSliderModule,
     MatSlideToggleModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent, []]
