@@ -35,21 +35,15 @@ export class HomeComponent implements OnInit {
   ];
 
   public Imagedata = [
-    '/assets/twea.jpeg',
     '/assets/farmFresh.jpeg',
     '/assets/lucielle.jpeg',
-    '/assets/PartyInTheBackMat.jpeg',
     '/assets/Earrings1.jpeg',
-    '/assets/SongBox.jpeg',
-    '/assets/busybee_trans.png',
     '/assets/luckyCharmCocoa.jpeg',
     '/assets/theChild.jpeg',
-    '/assets/mamaBearEarings.jpeg',
     '/assets/reesesCocoaBomb.jpeg',
     '/assets/rugratz.jpeg',
     '/assets/sisFlowers.jpeg',
     '/assets/sugarCookie.jpeg',
-    '/assets/weThePeople.jpeg'
   ];
   startIndex = 0;
   constructor() { }
