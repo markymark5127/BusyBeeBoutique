@@ -2,8 +2,15 @@
 .edge {
   margin: auto;
   margin-top: 5%;
-  width: 70%;
+  width: 70vw;
   text-align: left;
+  background-image: url("/assets/busybee_trans.png");
+  background-color: #a1bdbd;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5%;
+  border-radius: 25px;
  }
  img {
   border-radius: 50%;
@@ -13,12 +20,20 @@
 h1 {
   font-family: Bradley Hand, cursive;
   font-size: xx-large;
+  text-shadow: 3px 3px 4px #000000;
+  margin: auto;
+  margin-left: 5%;
 }
 .blurb {
   font: 'San Francisco', Helvetica, Arial, san-serif;
+  text-shadow: 3px 3px 4px #000000;
+  margin: auto;
   margin-left: 5%;
+  width: 35vw;
+  font-size: large;
 }
- .box {
+.box {
+
   display: flex;
   align-items: center;
 }
