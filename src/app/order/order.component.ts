@@ -35,12 +35,16 @@ export class OrderComponent implements OnInit {
       this.name = result.name;
 
       if (this.name !== '' && this.email !== '' && this.getTotalCost() > 0) {
+        let purchases = [];
+        for( let i = 0; i < this.cartService.items.length; i++) {
+          purchases.push([this.cartService.items[i].name, this.cartService.items[i].size, this.cartService.items[i].price])
+        }
         var send = {
                   name: this.name,
                   email: this.email,
                   subject: 'Order',
                   totalCost: this.getTotalCost(),
-                  message: this.cartService.items
+                  message: purchases
                 };
         this.http.post('https://formspree.io/xqkbwypj', JSON.stringify(send))
         .subscribe(response => {}, err => { alert('There was an error sending your order. Please try again.'); });
