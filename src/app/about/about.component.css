@@ -20,23 +20,24 @@
 h1 {
   font-family: Bradley Hand, cursive;
   font-size: xx-large;
-  text-shadow: 3px 3px 4px #000000;
+  color: #303030;
   margin: auto;
-  margin-left: 5%;
+  margin-left: 0%;
 }
 .blurb {
   font: 'San Francisco', Helvetica, Arial, san-serif;
-  text-shadow: 3px 3px 4px #000000;
+  color: #303030;
   margin: auto;
-  margin-left: 5%;
-  width: 35vw;
+  margin-left: 0%;
+  width: 30vw;
   font-size: large;
 }
 .mobileBlurb {
   font: 'San Francisco', Helvetica, Arial, san-serif;
-  text-shadow: 3px 3px 4px #000000;
+  color: #303030;
   margin: auto;
-  margin-left: 5%;
+  margin-left: 0%;
+  width: 100%;
   font-size: large;
 }
 .box {
