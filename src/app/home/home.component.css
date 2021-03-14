@@ -1,7 +1,10 @@
 .space{
-  margin: 2%;
+  margin: auto;
+  margin-top: 2vw;
   padding: 1%;
-  background-color: white;
+  background-color: #a1bdbd;
+  width: 90vw;
+
  }
  .tile-image {
   width:100%;

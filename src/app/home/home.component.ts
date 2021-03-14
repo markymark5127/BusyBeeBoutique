@@ -14,10 +14,18 @@ export interface Tile {
 })
 export class HomeComponent implements OnInit {
   tiles: Tile[] = [
-    {text: '/assets/CMWWine.jpg', cols: 3, rows: 1, color: 'lightblue'},
-    {text: '/assets/lepriclaw.jpg', cols: 1, rows: 2, color: 'lightblue'},
-    {text: '/assets/NBC2.jpg', cols: 1, rows: 1, color: 'lightblue'},
-    {text: '/assets/CMW.jpg', cols: 2, rows: 1, color: 'lightblue'},
+    {text: '/assets/twea.jpeg', cols: 1, rows: 2, color: 'lightblue'},
+    {text: '/assets/farmFresh.jpeg', cols: 1, rows: 1, color: 'lightblue'},
+    {text: '/assets/lucielle.jpeg', cols: 1, rows: 2, color: 'lightblue'},
+    {text: '/assets/luckyCharmCocoa.jpeg', cols: 1, rows: 1, color: 'lightblue'},
+    {text: '/assets/theChild.jpeg', cols: 1, rows: 2, color: 'lightblue'},
+    {text: '/assets/reesesCocoaBomb.jpeg', cols: 1, rows: 1, color: 'lightblue'},
+    {text: '/assets/rugratz.jpeg', cols: 1, rows: 2, color: 'lightblue'},
+    {text: '/assets/sisFlowers.jpeg', cols: 1, rows: 2, color: 'lightblue'},
+    {text: '/assets/sugarCookie.jpeg', cols: 1, rows: 1, color: 'lightblue'},
+    {text: '/assets/weThePeople.jpeg', cols: 1, rows: 2, color: 'lightblue'},
+
+
   ];
   constructor() { }
 
