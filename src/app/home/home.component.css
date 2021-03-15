@@ -16,10 +16,11 @@
   top: 10vh;
   background-color: #a1bdbd;
   width: 60%;
-  height: 85%;
+  height: 70%;
   z-index: -1;
   border-radius: 10px;
   margin-left: 20vw;
+  vertical-align: middle;
 }
 
 .mall-slide .slid-content {
@@ -28,6 +29,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin: auto;
+  vertical-align: middle;
 }
 
 .mall-slide .slid-content .mall-carousel-ind {
