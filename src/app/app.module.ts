@@ -39,6 +39,7 @@ import { ClothingComponent } from './clothing/clothing.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NewsComponent } from './news/news.component';
     ClothingComponent,
     AccessoriesComponent,
     AboutComponent,
-    NewsComponent
+    NewsComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
