@@ -1,16 +1,3 @@
-.space{
-  margin: auto;
-  margin-top: 3vw;
-  padding: 1%;
-  background-color: #a1bdbd;
-  width: 93vw;
-  border-radius: 5px;
-
- }
- .tile-image {
-  width:100%;
-  height: auto;
-}
 .mall-slide {
   position: absolute;
   top: 10vh;
